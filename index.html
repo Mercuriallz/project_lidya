@@ -1,100 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming Languages Portal</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Programming Portal</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarProfile"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Bahasa pemrograman
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfile">
-                <li><a class="dropdown-item" href="language.html">Bahasa pemrograman</a></li>
-                <li class="nav-item"><a class="dropdown-item" href="#apakek">Statistik</a></li>
-                <li class="nav-item"><a class="dropdown-item" href="#apakek">Bahasa pemrograman untuk pemula</a></li>
 
-              </ul>
-            </li>
-           
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarProfile"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Profile
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfile">
-                <li><a class="dropdown-item" href="profile.html">View Profile</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="login.html">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming Languages Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+ 
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu utama</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarProgramming" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Programming Languages
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProgramming">
+              <li><a class="dropdown-item" href="language.html">Bahasa pemrograman</a></li>
+              <li><a class="dropdown-item" href="#statistics">Statistik</a></li>
+              <li><a class="dropdown-item" href="#beginner">Untuk pemula</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarProfile" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfile">
+              <li><a class="dropdown-item" href="profile.html">View Profile</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <div class="container mt-4">
+    <!-- Header Section -->
+    <header class="text-center mb-5">
+      <h1>Selamat datang di website bahasa pemrograman</h1>
+      <p>Tempat dimana kamu bisa belajar bahasa pemrograman!</p>
+    </header>
+
+    <!-- Podcast Section -->
+    <section id="podcast" class="mb-5">
+      <h2>Podcast pemrograman</h2>
+      <audio controls class="w-100 mt-3">
+        <source src="audio/spotifydown.com - Pemuja Rahasia.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section class="tutorials mb-5">
+      <h2>Tutorial pemrograman</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Video tutorial Java Script</h5>
+          <div class="iframe-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/SDROba_M42g?si=3pnAOg9-Q2RMxUHW"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Video tutorial Java</h5>
+          <div class="iframe-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/jiUxHm9l1KY?si=6x8hkSFHZgH46FeA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Video tutorial Dart</h5>
+          <div class="iframe-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/-mzXdI27tyk?si=wrkpE2oSYvcw-gg8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Video tutorial python</h5>
+          <div class="iframe-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/o2soIPoSxps?si=eWfr5ek-wMTxeOt6"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </nav>
-    
+    </section>
+  </div>
 
-    <div class="container mt-4">
-      <header class="text-center">
-        <h1>Selamat datang</h1>
-        <p>Di website bahasa pemrograman</p>
-      </header>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2024 Web lidya</p>
+</footer>
 
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-      <section id="podcast" class="mt-4">
-        <h2>Listen to a Podcast</h2>
-        <audio controls>
-          <source src="audio/spotifydown.com - Pemuja Rahasia.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </section>
-
-      <section class="mt-4">
-        <h2>Programming Tutorial</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cHKZ7eWiZjM?si=Y8cAEb1rsEZ59eCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </section>
-
-    
-
-     
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
