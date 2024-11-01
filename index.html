@@ -25,29 +25,49 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#languages">Bahasa pemrograman</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarProfile"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Bahasa pemrograman
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfile">
+                <li><a class="dropdown-item" href="language.html">Bahasa pemrograman</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#apakek">Statistik</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#apakek">Bahasa pemrograman untuk pemula</a></li>
+
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Logout</a>
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarProfile"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Profile
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarProfile">
+                <li><a class="dropdown-item" href="profile.html">View Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#podcast">Podcast</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#apaaja">Statistik</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#apakek">Bahasa pemrograman untuk pemula</a>
-              </li>
-              
-            
           </ul>
         </div>
       </div>
     </nav>
+    
 
     <div class="container mt-4">
       <header class="text-center">
@@ -55,120 +75,7 @@
         <p>Di website bahasa pemrograman</p>
       </header>
 
-      <section id="languages" class="mt-4">
-        <h2>Featured Languages</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="image/image-JavaScript.webp"
-                class="card-img-top"
-                alt="JavaScript Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-                <p class="card-text">
-                  JavaScript adalah bahasa pemrograman yang digunakan terutama
-                  untuk pengembangan web. Ini memungkinkan interaktivitas di
-                  halaman web, seperti animasi, pengolahan data, dan respon
-                  terhadap tindakan pengguna.
-                </p>
-              </div>
-              `
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="image/gambar_python.png"
-                class="card-img-top"
-                alt="Python Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Python</h5>
-                <p class="card-text">
-                  Python adalah bahasa pemrograman yang tinggi tingkat dan
-                  serbaguna, dikenal karena sintaksisnya yang jelas dan mudah
-                  dipahami. Dikembangkan oleh Guido van Rossum dan dirilis
-                  pertama kali pada tahun 1991, Python banyak digunakan dalam
-                  berbagai bidang, termasuk pengembangan web, analisis data,
-                  kecerdasan buatan, pembelajaran mesin, otomatisasi, dan
-                  scripting hahaha.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="image/gambar_java.webp"
-                class="card-img-top"
-                alt="Java Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Java</h5>
-                <p class="card-text">
-                  Java adalah bahasa pemrograman yang dikembangkan oleh Sun
-                  Microsystems (sekarang bagian dari Oracle Corporation) dan
-                  dirilis pertama kali pada tahun 1995. Java dirancang dengan
-                  prinsip "tulis sekali, jalankan di mana saja" (WORA), yang
-                  berarti kode yang ditulis dalam Java dapat dijalankan di
-                  berbagai platform tanpa perlu modifikasi, asalkan ada Java
-                  Virtual Machine (JVM) yang tersedia.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img src="image/gambar_C++.jpg" class="card-img-top" alt="C++" />
-              <div class="card-body">
-                <h5 class="card-title">C++</h5>
-                <p class="card-text">
-                  Bahasa yang dikembangkan oleh Microsoft, banyak digunakan
-                  dalam pengembangan aplikasi desktop dan web menggunakan
-                  framework .NET.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="image/gambar_ruby.jpg"
-                class="card-img-top"
-                alt="Ruby Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ruby</h5>
-                <p class="card-text">
-                  Bahasa pemrograman yang fokus pada kemudahan penggunaan dan
-                  produktivitas. Dikenal dengan framework Ruby on Rails untuk
-                  pengembangan web.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <img
-                src="image/gambar_dart.jpg"
-                class="card-img-top"
-                alt="Dart Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Dart</h5>
-                <p class="card-text">
-                  Dart adalah bahasa pemrograman yang dikembangkan oleh Google,
-                  dirilis pertama kali pada tahun 2011. Dart dirancang untuk
-                  membangun aplikasi web, server, dan mobile dengan fokus pada
-                  performa tinggi dan kemudahan penggunaan.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       <section id="podcast" class="mt-4">
         <h2>Listen to a Podcast</h2>
@@ -185,70 +92,7 @@
 
     
 
-      <section class="mt-4" id="apakek">
-        <h2>Statistik penggunaan bahasa pemrograman</h2>
-        <table class="table table-bordered">    
-            
-
-          <thead>
-            <tr>
-              <th>Language</th>
-              <th>Popularity</th>
-              <th>Year Created</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>JavaScript</td>
-              <td>95%</td>
-              <td>1995</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>89%</td>
-              <td>1991</td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td>85%</td>
-              <td>1995</td>
-            </tr>
-            <tr>
-                <td>Ruby</td>
-                <td>80%</td>
-                <td>1996</td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>95%</td>
-                <td>1991</td>
-              </tr>
-              <tr>
-                <td>Dart</td>
-                <td>90%</td>
-                <td>2011</td>
-              </tr>
-              <tr>
-                <td>C++</td>
-                <td>89%</td>
-                <td>1985</td>
-              </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section class="mt-4">
-        <h2>Bahasa pemrograman terbaik untuk pemula</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Python</li>
-          <li class="list-group-item">JavaScript</li>
-          <li class="list-group-item">Ruby</li>
-          <li class="list-group-item">Java</li>
-          <li class="list-group-item">Dart</li>
-          <li class="list-group-item">C++</li>
-        
-        </ul>
-      </section>
+     
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
